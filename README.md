@@ -7,10 +7,10 @@ Consumers may also find such a tool helpful in determining when ahd how to buy a
 
 ## 2. Data Gathering
 I gather data from 4 sources:
-    1. Ticketmaster API (Face value price information)
-    2. SeatGeek API (Resale value price information)
-    3. Stubhub API (Resale value price information)
-    4. Spotify (Popularity information on artists)
+1. Ticketmaster API (Face value price information)
+2. SeatGeek API (Resale value price information)
+3. Stubhub API (Resale value price information)
+4. Spotify (Popularity information on artists)
 
 The concerts data is matched between sources based on datetime and venue name, under the assumption that a venue only has a single event at a given time. I include a few notes on how the venues were matched in the 'Venue Matching Notes' notebook.
 
