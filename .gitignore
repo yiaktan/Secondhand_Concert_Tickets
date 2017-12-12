@@ -1,3 +1,5 @@
 config.py
 __pycache__
 .ipynb_checkpoints
+Stubhub*/
+SH_inv.csv
