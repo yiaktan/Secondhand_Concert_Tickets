@@ -8,3 +8,7 @@ Spotify was missing data for about 200 artists. These missing values were filled
 
 ## 1.3 Outliers
 Max ticket prices included a lot of outlying values (Over 1000 events with max resale prices outside of 1.5\*IQR). Rather than drop these values and reduce the sample size, I instead chose to focus the analysis on minimum ticket prices.
+
+## 1.4 Categoires with Few Samples
+
+Categories with less than 50 samples were dropped (States, genres with less than 50 events) 
