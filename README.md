@@ -15,5 +15,17 @@ I gather data from 4 sources:
 The concerts data is matched between sources based on datetime and venue name, under the assumption that a venue only has a single event at a given time. I include a few notes on how the venues were matched in the 'Venue Matching Notes' notebook.
 
 ## 3. Data Exploration and Feature Engineering
+1. Import data, initial cleaning and feature engineering
+2. Feature Summaries
+    2.1 Continuous variables
+    2.2 Categorical Variables
+3. Data Exploration
+    3.1 Scatterplots (Spotify info, SeatGeek venue score, ticket listings, time info)
+    3.2 Venue State
+    3.3 Day of Week
+    3.4 Genre and Subgenre
+    3.5 Artist Count
+    3.6 Promoter
+    3.7 Resale Ticket Source
 ## 4. Machine Learning
 ## 5. Final Analysis
