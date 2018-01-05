@@ -32,6 +32,6 @@ The concerts data is matched between sources based on datetime and venue name, u
     1. Continuous variables - Pearson & Spearman Correlation
     2. Categorical Variables - T-tests, ANOVA F-tests, and Pair Tukey tests
 
-See the ["Statistical Analyses"](Statistical_Analyses.ipynb) report for visualizations and findings
+See the ["Statistical Analyses"](Statistical_Analyses.md) report for visualizations and findings
 ## 5. Machine Learning
 ## 5. Final Analysis
