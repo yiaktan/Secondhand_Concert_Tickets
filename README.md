@@ -29,7 +29,7 @@ The concerts data is matched between sources based on datetime and venue name, u
       6. Promoter
       7. Resale Ticket Source  
 ## 4. Statistical Analyses
-    1. Continuous variables - Pearson & Spearman Correlation
+    1. Continuous Variables - Pearson & Spearman Correlation
     2. Categorical Variables - T-tests, ANOVA F-tests, and Pair Tukey tests
 
 See the ["Statistical Analyses"](Statistical_Analyses.md) report for visualizations and findings
