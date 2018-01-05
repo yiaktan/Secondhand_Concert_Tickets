@@ -1,5 +1,5 @@
 ## 1. Summary
-Statistical analyses were performed on the continuous and categorical variables against the markup on minimum ticket prices.
+Statistical analyses were performed on the continuous and categorical variables against the markup on minimum ticket prices. I found it interesting that markups had a slight, but significant negative correlation to Spotify popularity and followers. I also found it to be quite intersting how a small promoter based in Atlanta (Masquerade), generated much higher markups than any of its competitors. Events self-promoted by the venue also commanded higher markups than events from big names like Live Nation and House of Blues. There also doesn't seem to be an obvious connection between the state in which the venue is located, and overall markup. New York and Nevada have the most events, but are on opposite ends of the spectrum, while Louisiana and Georgia command higher markups than places with high cost of living such as California.
 
 ### 2. Continuous Variables
 #### Variables Analyzed:
@@ -38,9 +38,10 @@ Spearman R values are generally higher than their Pearson R counterparts. Artist
   3. Day of Week
   4. Promoter
   5. Ticket Source
+  6. Venue State
 
 ### Tests Used
-T tests were used to compare the markups of each feature category to the whole dataset's markup mean. Then an ANOVA f-test was used to determine if the means of categorical features were significantly different. After confirming a statistically significant difference in markup means amongst categories, a Paired Tukey test was used to compare every unique pair of categories.
+T tests were used to compare the markups of each feature category to the whole dataset's markup mean. Then an ANOVA F-test was used to determine if the means of categorical features were significantly different. After confirming a statistically significant difference in markup means amongst categories, a Paired Tukey test was used to compare every unique pair of categories. Because categories had unequal sample sizes and unequal variances, the ANOVA F-Test and subsequent Paired Tukey test may not be the most ideal choices. However, they were used for the sake of simplicity since the final product of this project is not a pairwise analysis of categories.
 
 ### Results
 The results corroborated the conclusions drawn from the initial graphic data exploration.
@@ -75,3 +76,10 @@ Events by Masquerade had markups significantly higher than all other promoters
 Events with tickets only on Stubhub have significantly higher markups than those of the dataset. Events with tickets on both Stubhub and SeatGeek have significantly lower markups.
 ##### ANOVA/Paired Tukey
 Differences are statistically significant for tickets on both platforms vs. Stubhub, and SeatGeek vs. Stubhub.
+
+#### 3.6 Venue State
+![Day of Week Summary](Graphs/state_summary.png?raw=true)
+##### T-Test
+CA, FL, IL, KY, MA, MI, NC, NV, OH, PA, TX, and VA have markups significantly lower than the mean. GA, LA, and NY have markups significantly higher than the mean
+##### ANOVA/Paired Tukey
+CA & NY, FL & NY, GA & NV, IL & OH, IN & NY, KY & NY MA & NY, ME & NY, MI & NY, MO & NV, NC & NY, NJ & NY, NV & NY, NY & OH, NY & PA, NY & TX, NY & VA have statistically different means. New York has significantly higher markups than most other states, while Nevada has significantly lower markups than most states.
