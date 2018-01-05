@@ -24,7 +24,7 @@ Events with resale tickets only on Stubhub had much higher markups than those wi
 New York and Nevada were at the opposite ends of the markup spectrum. Georgia and Louisiana had higher markups than California and Illinois which I found to be surprising. However, Blues and Folk music events had high markups, and are most likely concentrated in southern states.
 ## 5. Share the Capstone Project 1 code and milestone report related to Github repository
 The actual notebooks can be viewed on Github at these links:
-  1. [Data Gathering](Data_Gathering.ipynb?raw=true)
-  2. [Data Wrangling/Exploration](Data_Exploration.ipynb?raw=true)
-  3. [Statistical Analyses](Stats_Tests.ipynb?raw=true)
-  4. [Data Story (Writeup of exploration and statistical analyses)](Statistical_Analyses.md?raw=true)
+  1. [Data Gathering](Data_Gathering.ipynb)
+  2. [Data Wrangling/Exploration](Data_Exploration.ipynb)
+  3. [Statistical Analyses](Stats_Tests.ipynb)
+  4. [Data Story (Writeup of exploration and statistical analyses)](Statistical_Analyses.md)
