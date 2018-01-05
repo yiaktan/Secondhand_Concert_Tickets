@@ -1,0 +1,30 @@
+## 1. The Problem
+The price of concert event tickets can vary widely by popularity of artist, day of the week, location, among many other things. All of this variation can make it difficult for ticket resellers and resale platforms to price secondhand tickets. I will attempt to use machine learning to analyze the important factors in determining resale ticket prices in the United States.
+## 2. Describe your data set, and how you cleaned/wrangled it
+### 2.1 Data Gathering
+Concert data was pulled from the Ticketmaster, Stubhub, SeatGeek, and Spotify APIs on December 7, 2017. Ticketmaster was used for face value ticket prices, as well as for presale and sale start dates. Stubhub and SeatGeek data were used to for resale price values. The three data sources were joined based on event date and venue. Finally, the Spotify API was used to get the number of Spotify followers, and the Spotify popularity score of each artist.
+### 2.2 Data Wrangling
+Missing values for Spotify artist data were filled in with their respective subgenre's median (I found the subgenre categorization to be more accurate than the genre categorization). Several events were also missing sale start dates, and were filled with the average amount of days on sale.<br><br>
+New features created were presale length, number of days on sale, days until show, ticket source, day of the week, min and max markups (Ticketmaster and Stubhub only provide the minimum and maximum ticket prices of each event, so price analysis was done comparing minimums to minimums, and maximums to maximums.), and the average of number of tickets listed per event (Sum of SH and SG listings divided by two, if both had listings).<br><br>
+There was a lot of variation overall in ticket prices, with the most extreme variation in the markups of maximum prices. I decided to focus the analysis on minimum prices and dropped events with no minimum face value and no minimum resale price information.
+Categorical features contained categories with only a few samples, making it difficult to generalize those categories. I recategorized genres, subgenres, and promoters with n < 50 sample sizes as "Other", and dropped venue states with  n < 50 events.
+
+## 3. List other potential data sets you could use
+There are several other data sources I could use to make my analysis more comprehensive, but they are not as easily accessible. <br>
+__Ticketfly__ - Face value tickets for events at smaller venues/clubs<br>
+__Facebook__ - Many resale tickets are exchanged and sold in Facebook Groups<br>
+__Songkick__ - Aggregate information on events and face value prices, and data on if an event is sold out. <br>
+__Billboard__ - Additional data on artists and their popularity
+## 4. Explain your initial findings
+There are slight negative correlations between ticket markup and average number of tickets listed, presale length, and days on sale. Interestingly, different methods of calculating correlation yielded negative and positive correlations between Spotify popularity/followers and markup. The number of days until a show also had opposing positive and negative correlations, and may not be statistically significant enough to have an influence. The number of artists in a show does not seem correlated to markup.
+Pop music drove the highest markups, and Latin music yielded the lowest (By subgenre, which I found to be more relevant than the genre listed by Ticketmaster).<br><br>
+There also interestingly wasn't a clear pattern between day of the week and markup, though I would have expected weekend events to have higher markups.<br>
+Events with large tour promoters had much lower markups than those that were self-promoted by the venue, or by smaller promoters (Masquerade). I was also surprised by this.<br><br>
+Events with resale tickets only on Stubhub had much higher markups than those with tickets on SeatGeek or both platforms.
+New York and Nevada were at the opposite ends of the markup spectrum. Georgia and Louisiana had higher markups than California and Illinois which I found to be surprising. However, Blues and Folk music events had high markups, and are most likely concentrated in southern states.
+## 5. Share the Capstone Project 1 code and milestone report related to Github repository
+The actual notebooks can be viewed on Github at these links:
+  1. [Data Gathering](Data_Gathering.ipynb?raw=true)
+  2. [Data Wrangling/Exploration](Data_Exploration.ipynb?raw=true)
+  3. [Statistical Analyses](Stats_Tests.ipynb?raw=true)
+  4. [Data Story (Writeup of exploration and statistical analyses)](Statistical_Analyses.md?raw=true)
