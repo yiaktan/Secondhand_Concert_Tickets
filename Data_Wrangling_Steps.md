@@ -12,3 +12,4 @@ Max ticket prices included a lot of outlying values (Over 1000 events with max r
 
 ## 5 Categories with Few Samples
 Categorical features contained categories with only a few samples, making it difficult to generalize those categories. I recategorized genres, subgenres, and promoters with n < 50 sample sizes as "Other", and dropped venue states with  n < 50 events.
+Additionally, all events more than 6 months out were dropped, as there were few samples and its prices for those tickets would probably change over time.
