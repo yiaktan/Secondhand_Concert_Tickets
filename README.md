@@ -51,5 +51,5 @@ See the ["Statistical Analyses"](3.Statistical_Analyses.md) report for visualiza
     6. Model Ensembling and Comparison on Test Set
     7. Neural Net with Keras and Tensorflow
 ## 5. Final Analysis
-  1. ["Final Report"](https://github.com/yiaktan/Secondhand_Concert_Tickets/blob/master/Cap1%20Final%20Report.pdf)
-  2. ["Medium Post --Published on Towards Data Science"](https://towardsdatascience.com/how-much-is-your-concert-ticket-really-worth-382a8d38333)
+  1. [Final Report](https://github.com/yiaktan/Secondhand_Concert_Tickets/blob/master/Cap1%20Final%20Report.pdf)
+  2. [Medium Post --Published on Towards Data Science](https://towardsdatascience.com/how-much-is-your-concert-ticket-really-worth-382a8d38333)
