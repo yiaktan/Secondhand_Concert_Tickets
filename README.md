@@ -36,4 +36,20 @@ The concerts data is matched between sources based on datetime and venue name, u
 
 See the ["Statistical Analyses"](3.Statistical_Analyses.md) report for visualizations and findings
 ## 4. Machine Learning
+1. Data Preprocessing
+2. Linear Regression
+    1. Standard Linear Regression
+    2. ElasticNet
+    3. Lasso
+    4. Comparison of Methods
+3. Classification
+    1. Variable & Function Setup
+    2. Classifier Evaluation with 3 & 4 Bins
+    3. Learning Curves
+    4. Feature Importance Rankings
+    5. Hyperparameter Tuning
+    6. Model Ensembling and Comparison on Test Set
+    7. Neural Net with Keras and Tensorflow
 ## 5. Final Analysis
+  1. ["Final Report"](https://github.com/yiaktan/Secondhand_Concert_Tickets/blob/master/Cap1%20Final%20Report.pdf)
+  2. ["Medium Post --Published on Towards Data Science"](https://towardsdatascience.com/how-much-is-your-concert-ticket-really-worth-382a8d38333)
